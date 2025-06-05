@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { getToken } from "next-auth/jwt";
 export async function middleware(request) {
   const path = request.nextUrl.pathname;
-  const isPublicPath = ["/login", "/register"].includes(path);
+  const isPublicPath = ["/signin", "/signup"].includes(path);
   const token = await getToken({
     req: request,
     secret: process.env.SECRET_KEY,
