@@ -34,6 +34,8 @@ npm run dev
 
 ### 4.Features
 
+Before run the project create .env file and inthe file maintain MONGO_URI="path you can get mongodb project", SECRET_KEY="MyNameIsSathish" (Youcan unique name)
+
 📱 375px wide mobile-style layout on all devices
 👤 User Registration with name, email, password, and company info
 🔐 Login with secure password (bcrypt)
