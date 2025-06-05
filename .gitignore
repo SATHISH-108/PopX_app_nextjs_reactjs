@@ -40,7 +40,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-mkdir frontend backend
-echo > frontend/.gitkeep
-echo > backend/.gitkeep
 

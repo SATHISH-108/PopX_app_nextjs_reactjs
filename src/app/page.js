@@ -6,7 +6,7 @@ export default function WelcomePage() {
   console.log("user_homepage", user);
 
   return (
-    <div className="flex flex-col justify-end items-start h-screen p-4 ">
+    <div className="flex flex-col justify-end items-start h-screen p-4">
       <div className="mb-6">
         <h1 className="text-xl font-bold mb-2 max-w-72">Welcome to PopX</h1>
         <p className="text-gray-500  max-w-64 text-md">

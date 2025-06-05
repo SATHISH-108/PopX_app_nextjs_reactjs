@@ -58,7 +58,10 @@ export default function LoginPage() {
           </p>
           <div className="flex flex-col space-y-4">
             <div>
-              <label className="block text-sm text-purple-700 font-semibold">
+              <label
+                name="email"
+                className="block text-sm text-purple-700 font-semibold"
+              >
                 Email Address
               </label>
               <input
@@ -70,7 +73,10 @@ export default function LoginPage() {
               />
             </div>
             <div>
-              <label className="block text-sm text-purple-700 font-semibold">
+              <label
+                name="password"
+                className="block text-sm text-purple-700 font-semibold"
+              >
                 Password
               </label>
               <input
