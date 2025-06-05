@@ -16,12 +16,13 @@ const signupPage = () => {
   const signupHandler = async (e) => {
     e.preventDefault();
     console.log("user", user);
-    let response = await fetch("http://localhost:3000/api/register", {
+    let response = await fetch("/api/register", {
       method: "POST",
-      ContentType: "application/json",
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify(user),
     });
-    console.log("response", response);
     const data = await response.json();
     console.log("data", data);
     if (response.ok && response.status === 200) {
@@ -54,10 +55,7 @@ const signupPage = () => {
               <input
                 type="text"
                 placeholder="ENTER NAME"
-                value={
-                  user.name.charAt(0).toUpperCase() +
-                  user.name.slice(1).toLowerCase()
-                }
+                value={user.name}
                 onChange={(e) => setUser({ ...user, name: e.target.value })}
                 className="w-full px-3 py-2 border rounded-md"
               />
